@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> position absolute / cilck 이벤트 / transform </title>
+    <style>
+        #animationAllbtn{
+            position: absolute;
+            border: 0;
+            width: 2.8rem ;
+            height: 1.5rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+        }
+        #animationAllbtn:before, 
+        #animationAllbtn:after
+        {
+            content:"";
+            display: block;
+            height: 3px;
+            background-color: black;
+            position: absolute;
+        }
+        #animationAllbtn span{
+            display: block;
+            height: 3px;
+            background-color: black;
+            margin: 8PX 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- button#animationAllbtn>span -->
+
+    <button id="animationAllbtn">
+        <span></span>
+    </button>
+</body>
+</html>
