@@ -43,7 +43,14 @@
             
         }
         
+       
     </style>
+      <!-- /* script 태그를 style 태그 밑에 넣고 싶으면 아래 식 사용 function(){여기 안에 모든 식 넣기} */
+      /* window.addEventListener("load", function(){
+          document.getElementById("animationAllbtn").addEventListener('click', function(){
+      alert('클릭했어')
+     })
+      }) */ -->
 </head>
 <body>
     <!-- button#animationAllbtn>span -->
@@ -51,5 +58,47 @@
     <button id="animationAllbtn">
         <span></span>
     </button>
+    <script>
+
+        // * script 태그를 style 태그 안에 넣고 싶으면 아래 식 사용 function(){여기 안에 모든 식 넣기}
+        // window.addEventListener("load", function(){
+
+        // })
+
+       // * 화면의 아이디가 animationAllbtn 객체를 클릭하면 경고창뜨기
+       // * 화면의 아이디가 animationAllbtn 객체 명령 받아라  
+
+    //    document.getElementById("animationAllbtn").addEventListener('click', function(){
+    //     alert('클릭했어')
+    //    })
+
+       // * 아이디가 gnb 객체를 클릭하면 경고창 나 혼자한 자바스크립트 나오도록 한다.
+
+    //    .document.getElementById("gnb").addEventListener('click', function(){
+    //         alert('나 혼자한 자바스크립트')
+    //    })
+
+       // * id 가 allmenu 라는 객체를 클릭하면
+       // * id가 gnb에게 나타난다.
+
+    //    document.getElementById("allmenu").addEventListener('click', function(){
+    //     document.getElementById("gnb").style.display = "block";
+
+       // * id가 close 에게 배경색을 빨강으로 처리
+
+    //    document.getElementById('close').style.backgroundColor = "red";
+    
+    
+        document.getElementById("animationAllbtn").addEventListener('click', function(){
+            document.getElementById("animationAllbtn").classList.add("show");
+            
+            // document.body.classList = "show action popup";
+
+       })
+
+
+
+    
+    </script>
 </body>
 </html>
