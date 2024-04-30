@@ -5,35 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>반응형제작하기</title>
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
-    <style>
-        .img-fluid{
-            max-width: 100%; /*반응형홈페이지 만들때 모든 이미지에 무조건 넣기*/
-        }
-        #mainBanner{
-            background-image: url("./img/bg.png");
-            height: 100vw;
-            max-height: 800px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: auto 100%;
-            transition: 0.5s;
-            color: white;
-            font-size: 80px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        #mainBanner:hover{
-            background-size: auto 150%;
-        }
-
-        @media (max-width: 991px) {
-            h2 span{
-                display: none;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./css/rwd.css">
+    
 </head>
 <body>
 
